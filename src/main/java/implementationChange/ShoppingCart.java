@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private List<Price> prices2;
+    private List<Price> prices;
 
     public ShoppingCart() {
-        prices2 = new ArrayList<>();
+        prices = new ArrayList<>();
     }
 
     public void add(int price) {
-        this.prices2.add(new Price(price));
+        this.prices.add(new Price(price));
     }
 
     public int calculateTotalPrice() {
-        return prices2.stream().mapToInt(price -> price.getValue()).sum();
+        return prices.stream().mapToInt(price -> price.getValue()).sum();
     }
 
     public boolean hasDiscount() {
@@ -23,6 +23,6 @@ public class ShoppingCart {
     }
 
     public int numberOfProducts() {
-        return prices2.size();
+        return prices.size();
     }
 }
