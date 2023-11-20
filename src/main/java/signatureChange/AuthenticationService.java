@@ -2,9 +2,8 @@ package signatureChange;
 
 public class AuthenticationService {
 
-    private ID adminID = new ID(12345);
 
-    public boolean isAuthenticated(ID id) {
-        return id.equals(adminID);
+    public boolean isAuthenticated(int id) {
+        return id == 12345;
     }
 }
