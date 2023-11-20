@@ -23,9 +23,9 @@ public class YouShouldUnderstandValuesAndReferences {
         SomeType another = new SomeType();
         another.numbers[0] = 200;
         instance.thirdMethod(another);
-        //assertThat(another.numbers[0]).isEqualTo(-1000);
-        //assertThat(another.someField).isEqualTo("???");
-        //assertThat(another.child).isNull();
+        assertThat(another.numbers[0]).isEqualTo(100);
+        assertThat(another.someField).isEqualTo("changed");
+        assertThat(another.child).isNotNull();
 
         SomeType yetAnother = new SomeType();
         yetAnother.numbers[0] = 200;
