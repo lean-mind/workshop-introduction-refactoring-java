@@ -6,7 +6,7 @@ public class AuthenticationService {
     private ID adminID2 = new ID(12345);
 
     public boolean isAuthenticated(int id) {
-        return id == adminID;
+        return isAuthenticated(new ID(id));
     }
 
     public boolean isAuthenticated(ID id) {
