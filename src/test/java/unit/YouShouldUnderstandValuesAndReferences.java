@@ -30,6 +30,6 @@ public class YouShouldUnderstandValuesAndReferences {
         SomeType yetAnother = new SomeType();
         yetAnother.numbers[0] = 200;
         instance.fourthMethod(yetAnother.numbers);
-        //assertThat(yetAnother.numbers[0]).isEqualTo(-1000);
+        assertThat(yetAnother.numbers[0]).isEqualTo(0);
     }
 }
