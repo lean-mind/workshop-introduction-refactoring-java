@@ -12,7 +12,7 @@ public class YouShouldUnderstandValuesAndReferences {
 
         String arg1 = "bar";
         instance.firstMethod(arg1);
-        //assertThat(arg1).isEqualTo("???");
+        assertThat(arg1).isEqualTo("bar");
 
         SomeType other = new SomeType();
         other.numbers[0] = 100;
