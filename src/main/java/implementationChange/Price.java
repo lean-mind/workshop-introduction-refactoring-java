@@ -1,4 +1,9 @@
 package implementationChange;
 
 public class Price {
+    private final int value;
+
+    public Price(int value) {
+        this.value = value;
+    }
 }

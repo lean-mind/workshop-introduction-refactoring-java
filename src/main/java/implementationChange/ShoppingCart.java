@@ -14,6 +14,7 @@ public class ShoppingCart {
 
     public void add(int price) {
         this.prices.add(price);
+        this.prices2.add(new Price(price));
     }
 
     public int calculateTotalPrice() {
