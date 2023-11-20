@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private int price;
     private List<Integer> prices;
 
     public ShoppingCart() {
