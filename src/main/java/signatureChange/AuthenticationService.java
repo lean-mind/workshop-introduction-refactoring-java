@@ -3,7 +3,7 @@ package signatureChange;
 public class AuthenticationService {
 
 
-    public boolean isAuthenticated(int id) {
-        return id == 12345;
+    public boolean isAuthenticated(ID ID) {
+        return ID.getId() == 12345;
     }
 }
