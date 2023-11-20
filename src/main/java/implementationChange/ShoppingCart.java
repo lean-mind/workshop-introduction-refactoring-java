@@ -10,8 +10,8 @@ public class ShoppingCart {
         prices = new ArrayList<>();
     }
 
-    public void add(int price) {
-        this.prices.add(new Price(price));
+    public void add(Price price) {
+        this.prices.add(price);
     }
 
     public int calculateTotalPrice() {
