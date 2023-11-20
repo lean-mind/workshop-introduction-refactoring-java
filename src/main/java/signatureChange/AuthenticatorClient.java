@@ -12,7 +12,8 @@ public class AuthenticatorClient {
     }
 
     public void run() {
-        boolean authenticated = authenticationService.isAuthenticated(33);
+        ID id = new ID(33);
+        boolean authenticated = authenticationService.isAuthenticated(id);
         System.out.println("33 is authenticated = " + authenticated);
     }
 }
