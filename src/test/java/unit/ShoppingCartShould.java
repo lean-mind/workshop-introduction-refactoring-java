@@ -9,8 +9,10 @@ public class ShoppingCartShould {
     public void count_number_of_products() throws Exception {
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.add(10);
+        shoppingCart.add(10);
+        shoppingCart.add(10);
 
-        Assert.assertEquals(1, shoppingCart.numberOfProducts());
+        Assert.assertEquals(3, shoppingCart.numberOfProducts());
     }
 
     @Test
